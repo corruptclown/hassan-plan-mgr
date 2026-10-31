@@ -30,13 +30,13 @@ Late-November weekend work has no confirmed dates yet; it is a baseline reminder
 
 ## Publish on GitHub Pages
 
-Push the `hassan-plan` branch to the repository. In **Settings > Pages**, set **Build and deployment > Source** to **GitHub Actions**. The workflow deploys the static site whenever `hassan-plan` is updated; no build step is needed.
+GitHub Pages is configured to publish directly from the `hassan-plan` branch and repository root. Push updates to that branch; Pages serves the static site without a build step. To verify the setting, open **Settings > Pages** and check **Build and deployment > Source: Deploy from a branch**, **Branch: `hassan-plan`**, and **Folder: `/(root)`**.
 
 Repository: https://github.com/corruptclown/hassan-plan-mgr
 
 Public site URL once Pages is enabled: https://corruptclown.github.io/hassan-plan-mgr/
 
-The deployment includes only [index.html](./index.html), [styles.css](./styles.css), [app.mjs](./app.mjs), and [schedule.mjs](./schedule.mjs), plus `.nojekyll`. The `.nojekyll` file tells GitHub Pages to serve the static files without Jekyll processing.
+The site uses [index.html](./index.html), [styles.css](./styles.css), [app.mjs](./app.mjs), and [schedule.mjs](./schedule.mjs), plus `.nojekyll`. The `.nojekyll` file tells GitHub Pages to serve the static files without Jekyll processing.
 
 The local server, tests, and package file are development helpers.
 
